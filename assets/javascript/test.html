@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html> 
+<head> 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+  <title>Google Maps Multiple Markers</title> 
+</head> 
+<body>
+ <h1>Time</h1>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js">
+  var tFrequency = 3;
+
+// Time is 3:30 AM
+var firstTime = "03:30";
+
+// First Time (pushed back 1 year to make sure it comes before current time)
+var firstTimeConverted = moment(firstTime, "HH:mm").subtract(1, "years");
+console.log(firstTimeConverted);
+
+// Current Time
+var currentTime = moment();
+console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
+  </script>
+</body>
+</html>
+
